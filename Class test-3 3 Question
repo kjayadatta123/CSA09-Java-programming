@@ -16,7 +16,7 @@ public class rev
         {
             System.out.print("it's a perfect number");
         }else{
-            System.out.print("its");
+            System.out.print("its not a perfect number");
             s.close();
         }
       
