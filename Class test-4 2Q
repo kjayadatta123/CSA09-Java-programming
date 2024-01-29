@@ -1,0 +1,35 @@
+package factor;
+import java.util.Scanner;
+
+public class factor {
+	public static void main(String[] args)
+	{
+		   Scanner s= new Scanner(System.in);
+
+	        System.out.println("Give the  Number: ");
+	        int a= s.nextInt();
+
+	        System.out.println("No.of factors: ");
+	        int n = s.nextInt();
+
+	        int factors = 0;
+
+	        System.out.println("Factors of " + a + ":");
+	        for (int i = 1; i <= a; i++) {
+	            if (a % i == 0) {
+	                factors++;
+	                System.out.println(i);
+
+	                if (factors == n) {
+	                    System.out.println(" factor of " + a + " = " + i);
+	                    break;
+	                }
+	            }
+	        }
+
+	        System.out.println("Number of factors = " + factors);
+
+	        s.close();
+	}
+
+}
