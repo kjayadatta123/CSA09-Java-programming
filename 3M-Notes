@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Strings
+{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("Demoniators");
+        int a=s.nextInt();
+        System.out.print("no.of notes");
+        int a1=s.nextInt();
+        System.out.print("Demoniatorss");
+        int b=s.nextInt();
+        System.out.print("no.of notes");
+        int b1=s.nextInt();System.out.print("Demoniators");
+        int c=s.nextInt();
+        System.out.print("no.of notes");
+        int c1=s.nextInt();System.out.print("Demoniators");
+        int d=s.nextInt();
+        System.out.print("no.of notes");
+        int d1=s.nextInt();
+        int total=(a*a1)+(b*b1)+(c*c1)+(d*d1);
+        System.out.println("total amount"+total);
+        s.close();
+    }
+        
+    
+}
