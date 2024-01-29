@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Strings
+{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("enter");
+        int a=s.nextInt();
+        System.out.print("enter the number");
+        int b=s.nextInt();
+        System.out.print("enter the number");
+        int c=s.nextInt();
+        System.out.print("senior citizen");
+        char age=s.next().charAt(0);
+        double interest=0;
+        if(age=='y')
+        {
+            interest=(a*b*c*0.1)/100;
+            System.out.print(interest);
+        }
+        else
+        {
+            interest=(a*b*c*0.5)/100;
+            System.out.print(interest);
+            s.close();
+
+        }
+        
+    }
+}
