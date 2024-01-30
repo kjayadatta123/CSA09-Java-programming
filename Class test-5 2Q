@@ -1,0 +1,41 @@
+package marks;
+import java.util.Scanner;
+public class marks {
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the marks in python: ");
+        int pythonMarks = sc.nextInt();
+        System.out.print("Enter the marks in c programming: ");
+        int cMarks = sc.nextInt();
+        System.out.print("Enter the marks in Mathematics: ");
+        int mathsMarks = sc.nextInt();
+        System.out.print("Enter the marks in Physics: ");
+        int physicsMarks = sc.nextInt();
+
+        int total = pythonMarks + cMarks + mathsMarks + physicsMarks;
+        double aggregate = total / 4.0;
+
+        String grade;
+        if (aggregate > 75) {
+            grade = "Distinction";
+        } else if (60 <= aggregate && aggregate < 75) {
+            grade = "First Division";
+        } else if (50 <= aggregate && aggregate < 60) {
+            grade = "Second Division";
+        } else if (40 <= aggregate && aggregate < 50) {
+            grade = "Third Division";
+        } else {
+            grade = "Fail";
+        }
+
+        System.out.println("Total = " + total);
+        System.out.println("Aggregate = " + aggregate);
+        System.out.println(grade.toUpperCase());
+		
+	}
+
+}
+
+
+
