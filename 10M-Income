@@ -6,6 +6,7 @@ public class doc
         Scanner s=new Scanner(System.in);
         System.out.print("enter the income");
         int a=s.nextInt();
+        flaoat tax;
         if(a<=1500)
           System.out.print("no tax");
         else if (a>=1501 && a<=3000)
