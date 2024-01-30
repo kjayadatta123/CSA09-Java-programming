@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class doc
+{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("enter the income");
+        int a=s.nextInt();
+        if(a<=1500)
+          System.out.print("no tax");
+        else if (a>=1501 && a<=3000)
+          System.out.print("tax amount"+a/10);
+        else if(a>=3001 && a<=5001)
+          System.out.print("tax"+a/20);
+        else
+          System.out.print("tax"+a/30);
+            
+            s.close();
+        
+        
+    }
+}
