@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class rev{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the character * to stop");
+        
+        int upper=0;
+        int lower=0;
+        int digit=0;
+        while(true)
+        {
+            char a=s.next().charAt(0);
+            if(a=='*')
+            {
+                break;
+            }
+            if(Character.isUpperCase(a))
+            {
+                upper++;
+            }
+            else if(Character.isLowerCase(a))
+            {
+                lower++;
+            }
+            else if(Character.isDigit(a))
+            {
+                digit++;
+            }
+        }
+        System.out.println("upper"+upper);
+        System.out.println("lower"+lower);
+        System.out.println("digit"+digit);
+        s.close();
+    }
+}
