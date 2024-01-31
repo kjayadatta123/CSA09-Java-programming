@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class po
+{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+		System.out.print("enter the statement");
+		String a=s.nextLine();
+		int len=a.length();
+		char b[]=new char[len];
+		int vow=0;
+		for(int i=0;i<len;i++)
+		{
+			b[i]=a.charAt(i);
+			if(b[i]=='a'||b[i]=='e'||b[i]=='i'||b[i]=='o'||b[i]=='u'||b[i]=='A'||b[i]=='E'||b[i]=='I'||b[i]=='O'||b[i]=='U')
+				vow=vow+1;
+		}
+		System.out.print("vowels"+vow);
+		s.close();
+
+    }
+}
