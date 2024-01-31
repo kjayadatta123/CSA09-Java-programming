@@ -1,0 +1,21 @@
+import java.util.*;
+public class pov {
+    public static void main(String[] args) {
+        int[] a = {4,5,8,2,9,};
+        int[] b = {12,2,9,7};
+        List<Integer> common = new ArrayList<>();
+        for (int i : a) {
+            for (int j : b) {
+                if (i == j) {
+                    common.add(i);
+                }
+				
+            }
+        }
+        System.out.println("Common elements: " + common);
+    }
+}
+
+
+
+	
