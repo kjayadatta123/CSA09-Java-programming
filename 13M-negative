@@ -1,0 +1,43 @@
+import java.util.Scanner;
+class Strings
+{
+    
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("enter the number -1 to stop");
+        int a=0;
+        int s1=0;int s2=0;
+        int i=0;
+        int j=0;
+        while(a!=-1)
+        {
+            a=s.nextInt();
+            if(a==-1)
+            {
+                break;
+            }
+                
+            if(a>0)
+            {
+                s1=s1+a;
+                i++;
+            }
+            else
+            {
+            s2=s2+a;
+            j++;
+
+            }
+            
+        }
+        System.out.print(i);
+        System.out.print(j);
+        double pos=(s1/i);
+        double neg=(s2/j);
+
+        System.out.print(pos);
+        System.out.print(neg);
+
+    }
+}
